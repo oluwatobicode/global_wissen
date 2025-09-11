@@ -110,21 +110,6 @@ const AboutUs = () => {
                   className="w-full h-auto rounded-lg object-cover"
                 />
               </div>
-
-              <div className="absolute -top-12 -right-12 w-24 h-24 opacity-20">
-                <div className="grid grid-cols-3 gap-2 w-full h-full">
-                  {[...Array(9)].map((_, i) => (
-                    <motion.div
-                      key={i}
-                      className="bg-[#1077ED] rounded-sm"
-                      initial={{ scale: 0 }}
-                      whileInView={{ scale: 1 }}
-                      transition={{ delay: i * 0.1, duration: 0.3 }}
-                      viewport={{ once: true }}
-                    />
-                  ))}
-                </div>
-              </div>
             </div>
           </motion.div>
         </motion.div>

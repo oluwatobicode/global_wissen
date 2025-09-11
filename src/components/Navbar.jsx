@@ -1,14 +1,22 @@
+import { useState } from "react";
 import { Link } from "react-scroll";
 
 const Navbar = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   const navLinks = [
     { name: "About", href: "about" },
-    { name: "Community", href: "community" },
+    { name: "Who We Are", href: "community" },
+    { name: "Services", href: "services" },
     { name: "Contact", href: "contact" },
   ];
 
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
-    <nav className="fixed top-0 z-50  w-full p-6 md:h-[95px] bg-white">
+    <nav className="fixed top-0 z-50 w-full p-6 md:h-[95px] bg-white">
       <div className="mx-auto max-w-6xl flex items-center">
         <div className="mr-auto">
           <img
@@ -17,8 +25,10 @@ const Navbar = () => {
             className="w-20"
           />
         </div>
-        <div className="hidden md:flex items-center justify-center mx-auto">
-          <div className="flex items-center justify-center gap-8 ">
+
+        {/* Desktop Menu */}
+        <div className="hidden md:flex items-center justify-center">
+          <div className="flex items-center justify-center gap-8">
             {navLinks.map((link, index) => (
               <Link
                 key={index}
@@ -33,15 +43,57 @@ const Navbar = () => {
           </div>
         </div>
 
-        <div className="flex items-center justify-center gap-4">
-          <button className="cursor-pointer p-1 w-24 h-11 rounded-[12px] text-[16px] font-normal text-black  hover:text-[#1077ED] transition-colors duration-200">
-            Login
-          </button>
-          <button className="w-36 h-11 p-1 cursor-pointer bg-[#003057] rounded-[12px] text-[16px] font-normal text-white">
-            Join Community
+        {/* Mobile Menu Button */}
+        <div className="md:hidden">
+          <button
+            onClick={toggleMenu}
+            className="text-[#58595B] hover:text-black transition-colors duration-200 focus:outline-none"
+          >
+            <svg
+              className="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              {isMenuOpen ? (
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              ) : (
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              )}
+            </svg>
           </button>
         </div>
       </div>
+
+      {/* Mobile Menu */}
+      {isMenuOpen && (
+        <div className="md:hidden mt-4 bg-white border-t border-gray-100">
+          <div className="flex flex-col space-y-4 p-4">
+            {navLinks.map((link, index) => (
+              <Link
+                key={index}
+                smooth={true}
+                duration={500}
+                className="cursor-pointer text-[16px] text-[#58595B] font-normal hover:text-black transition-colors duration-200"
+                to={link.href}
+                onClick={() => setIsMenuOpen(false)}
+              >
+                {link.name}
+              </Link>
+            ))}
+          </div>
+        </div>
+      )}
     </nav>
   );
 };

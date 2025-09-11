@@ -16,9 +16,19 @@ const Footer = () => {
 
   const programs = [
     { name: "Data Science", href: "data-science" },
-    { name: "AI & Machine Learning", href: "ai-ml" },
+    { name: "AI & Prompt Engineering", href: "ai-ml" },
     { name: "Cloud Computing", href: "cloud" },
     { name: "Cybersecurity", href: "security" },
+    { name: "VFX", href: "vfx" },
+    {
+      name: "Project Management / Scrum Mastery",
+      href: "p_M",
+    },
+    { name: "Software Development", href: "software-dev" },
+    { name: "SEO", href: "seo" },
+    { name: "Product Development", href: "product-dev" },
+    { name: "Data Analysis", href: "data-analysis" },
+    { name: "  UI/UX Design", href: "ui-ux-design" },
   ];
 
   const contactUs = [
@@ -104,32 +114,6 @@ const Footer = () => {
                   Empowering professionals with cutting-edge technology
                   education and training programs.
                 </motion.p>
-              </motion.div>
-
-              <motion.div
-                className="flex flex-col gap-2"
-                variants={itemVariants}
-              >
-                <h4 className="text-sm font-medium font-family-sans-serif text-[#4A4D54] mb-2">
-                  Follow Us
-                </h4>
-                {["Facebook", "Twitter", "Instagram", "LinkedIn"].map(
-                  (text, index) => (
-                    <motion.div
-                      key={index}
-                      className="flex items-center gap-2"
-                      initial={{ opacity: 0, x: -20 }}
-                      whileInView={{ opacity: 1, x: 0 }}
-                      transition={{ delay: index * 0.1, duration: 0.4 }}
-                      viewport={{ once: true }}
-                    >
-                      <div className="w-2 h-2 bg-[#4A4D54] rounded-full"></div>
-                      <span className="text-base font-family-sans-serif text-[#4A4D54] hover:text-[#1077ED] cursor-pointer transition-colors duration-200">
-                        {text}
-                      </span>
-                    </motion.div>
-                  )
-                )}
               </motion.div>
             </div>
           </motion.div>

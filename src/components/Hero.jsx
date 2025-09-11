@@ -19,10 +19,6 @@ const Hero = () => {
     return () => clearInterval(interval);
   }, [backgroundImages.length]);
 
-  const goToSlide = (index) => {
-    setCurrentSlide(index);
-  };
-
   return (
     <main className="min-h-screen relative overflow-hidden" id="hero">
       <div className="absolute inset-0">
