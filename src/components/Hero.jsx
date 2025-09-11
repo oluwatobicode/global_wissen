@@ -44,7 +44,7 @@ const Hero = () => {
       <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/30 to-transparent"></div>
 
       <div className="relative z-10 min-h-screen px-4 sm:px-6 py-24 flex items-center">
-        <div className="max-w-7xl mt-auto mx-auto w-full">
+        <div className="max-w-7xl flex items-center justify-center mx-auto w-full">
           <div className="flex items-center justify-center flex-col">
             <h1 className="text-2xl text-center xs:text-3xl sm:text-4xl md:text-5xl xl:text-6xl font-medium font-family-mono tracking-tight mb-6 sm:mb-8 leading-[1.1] text-white drop-shadow-lg px-2">
               DEVELOPING DIGITAL AND ENTREPRENEURSHIP SKILL

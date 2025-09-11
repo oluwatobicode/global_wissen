@@ -1,3 +1,5 @@
+import React from "react";
+
 const Partners = () => {
   const partnerLogos = [
     { name: "Partner 1", logo: "/partners/logoOne.png" },
@@ -5,10 +7,15 @@ const Partners = () => {
     { name: "Partner 3", logo: "/partners/logoThree.png" },
     { name: "Partner 4", logo: "/partners/logoFour.png" },
     { name: "Partner 5", logo: "/partners/logoFive.png" },
+    { name: "Partner 6", logo: "/partners/logoSix.png" },
+    { name: "Partner 7", logo: "/partners/logoSeven.png" },
+    { name: "Partner 8", logo: "/partners/logoEight.png" },
+    { name: "Partner 9", logo: "/partners/logoNine.jpeg" },
+    { name: "Partner 10", logo: "/partners/logoTen.png" },
   ];
 
   return (
-    <section className="py-16" id="partners">
+    <section className="py-16 bg-gray-50" id="partners">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="text-center mb-12">
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
@@ -20,17 +27,17 @@ const Partners = () => {
           </p>
         </div>
 
-        <div className="relative overflow-hidden">
-          <div className="flex animate-scroll">
+        <div className="relative overflow-hidden rounded-lg py-8">
+          <div className="flex animate-scroll space-x-12">
             {partnerLogos.map((partner, index) => (
               <div
                 key={`first-${index}`}
-                className="flex-shrink-0 mx-8 flex items-center justify-center"
+                className="flex-shrink-0 flex items-center justify-center min-w-[140px]"
               >
                 <img
                   src={partner.logo}
                   alt={partner.name}
-                  className="h-16 sm:h-20 w-auto object-contain transition-all duration-300"
+                  className="h-12 sm:h-16 w-auto object-contain  transition-all duration-300"
                 />
               </div>
             ))}
@@ -38,12 +45,12 @@ const Partners = () => {
             {partnerLogos.map((partner, index) => (
               <div
                 key={`second-${index}`}
-                className="flex-shrink-0 mx-8 flex items-center justify-center"
+                className="flex-shrink-0 flex items-center justify-center min-w-[140px]"
               >
                 <img
                   src={partner.logo}
                   alt={partner.name}
-                  className="h-16 sm:h-20 w-auto object-contain  transition-all duration-300 "
+                  className="h-12 sm:h-16 w-auto object-contain  transition-all duration-300"
                 />
               </div>
             ))}
@@ -62,12 +69,19 @@ const Partners = () => {
         }
 
         .animate-scroll {
-          animation: scroll 30s linear infinite;
-          width: 200%;
+          animation: scroll 10s linear infinite;
+          display: flex;
+          width: calc(200% + 96px);
         }
 
         .animate-scroll:hover {
           animation-play-state: paused;
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+          .animate-scroll {
+            animation: none;
+          }
         }
       `}</style>
     </section>
