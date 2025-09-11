@@ -118,7 +118,6 @@ const Footer = () => {
             </div>
           </motion.div>
 
-          {/* Quick Info Section */}
           <motion.div className="lg:col-span-1" variants={itemVariants}>
             <motion.h3
               className="text-sm leading-relaxed mb-6 font-medium font-family-sans-serif text-[#4A4D54]"
@@ -251,7 +250,7 @@ const Footer = () => {
             transition={{ duration: 0.4, delay: 0.7 }}
             viewport={{ once: true }}
           >
-            © 2025 GLOBAL WISSEN. All rights reserved.
+            © 2025 GLOBAL WISSEN CONSULT. All rights reserved.
           </motion.p>
 
           <motion.div

@@ -50,9 +50,9 @@ const Stats = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
             >
-              Our members are proof that opportunity changes everything. See how
-              Global Wissen has transformed careers and lives across Nigeria and
-              beyond.
+              Our partners are proof that opportunity changes everything. See
+              how Global Wissen has transformed careers and lives across Nigeria
+              and beyond.
             </motion.p>
           </div>
         </div>

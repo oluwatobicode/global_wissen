@@ -68,7 +68,7 @@ const AboutUs = () => {
                 className="text-4xl sm:text-5xl font-bold font-family-mono text-gray-900 leading-tight"
                 variants={itemVariants}
               >
-                Global Wissen
+                Global Wissen Consult
               </motion.h1>
             </div>
 

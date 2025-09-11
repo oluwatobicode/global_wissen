@@ -107,8 +107,7 @@ const Contact = () => {
     setSubmitStatus("");
 
     try {
-      // Method 1: Using Formspree (recommended)
-      const response = await fetch("https://formspree.io/f/xovnrzgn", {
+      const response = await fetch("https://Formspree.io/f/xqadnvak", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -128,7 +127,6 @@ const Contact = () => {
         setSubmitStatus("error");
       }
     } catch (error) {
-      // Fallback: mailto link
       const mailtoLink = `mailto:your-email@example.com?subject=${encodeURIComponent(
         formData.subject
       )}&body=${encodeURIComponent(
