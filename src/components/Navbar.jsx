@@ -27,14 +27,14 @@ const Navbar = () => {
         </div>
 
         {/* Desktop Menu */}
-        <div className="hidden md:flex items-center justify-center">
+        <div className="hidden md:flex items-center justify-center mr-auto">
           <div className="flex items-center justify-center gap-8">
             {navLinks.map((link, index) => (
               <Link
                 key={index}
                 smooth={true}
                 duration={500}
-                className="cursor-pointer text-[16px] text-[#58595B] font-normal hover:text-black transition-colors duration-200"
+                className="cursor-pointer text-[16px] font-medium text-[#222222] hover:text-black transition-colors duration-200"
                 to={link.href}
               >
                 {link.name}
@@ -84,7 +84,7 @@ const Navbar = () => {
                 key={index}
                 smooth={true}
                 duration={500}
-                className="cursor-pointer text-[16px] text-[#58595B] font-normal hover:text-black transition-colors duration-200"
+                className="cursor-pointer text-[16px] text-[#222222] font-normal hover:text-black transition-colors duration-200"
                 to={link.href}
                 onClick={() => setIsMenuOpen(false)}
               >
