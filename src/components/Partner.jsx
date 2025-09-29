@@ -1,5 +1,3 @@
-import React from "react";
-
 const Partners = () => {
   const partnerLogos = [
     { name: "Partner 1", logo: "/partners/logoOne.png" },

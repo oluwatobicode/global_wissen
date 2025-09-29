@@ -30,26 +30,8 @@ const AboutUs = () => {
     },
   };
 
-  const features = [
-    {
-      title: "Knowledge",
-      description: "Cutting-edge curriculum designed for modern digital needs",
-      icon: "📚",
-    },
-    {
-      title: "Community",
-      description: "Building networks of digital innovators and creators",
-      icon: "👥",
-    },
-    {
-      title: "Resource",
-      description: "Comprehensive tools and support for continuous learning",
-      icon: "🔧",
-    },
-  ];
-
   return (
-    <main className="min-h-screen bg-gray-50 py-16 lg:py-24" id="about">
+    <main className="min-h-screen py-16 lg:py-24" id="about">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center"
@@ -60,56 +42,51 @@ const AboutUs = () => {
         >
           <motion.div className="space-y-8" variants={itemVariants}>
             <div className="space-y-4">
-              <h1 className="text-[40px] font-normal leading-[1.34] font-family-mono">
+              <h1 className="text-[20px] lg:text-[24px] font-medium leading-[150%]">
                 About Us
               </h1>
 
               <motion.h1
-                className="text-4xl sm:text-5xl font-bold font-family-mono text-gray-900 leading-tight"
+                className="text-[24px] lg:text-[32px] font-bold text-[#003058] leading-[125%]"
                 variants={itemVariants}
               >
                 Global Wissen Consult
               </motion.h1>
             </div>
 
-            <motion.div className="space-y-6" variants={itemVariants}>
-              <p className="text-lg leading-relaxed font-family-sans-serif text-[#4A4D54]">
+            <motion.div className="space-y-6 flex-1" variants={itemVariants}>
+              <p className="text-[16px] lg:text-[20px] leading-[150%] text-[#58595B]">
                 Global Wissen Consult is a{" "}
-                <span className="font-semibold text-[#1077ED]">
+                <span className="font-semibold text-[#003058]">
                   Swedish/Nigerian Social development enterprise
-                </span>{" "}
+                </span>
                 established to pass the light of digital literacy through modern
                 ways of learning.
               </p>
 
-              <p className="text-base leading-relaxed font-family-sans-serif text-[#4A4D54]">
+              <p className="text-[16px] lg:text-[20px] leading-[150%] text-[#58595B]">
                 The organization develops, implements & facilitates various
                 projects for universities, women & creatives. All projects are
                 under the core framework{" "}
-                <span className="font-semibold">"KCR"</span> - Knowledge,
-                Community & Resource - with the common mission to spread digital
-                literacy.
+                <span className="font-semibold text-[#003058]">"KCR"</span> -
+                Knowledge, Community & Resource - with the common mission to
+                spread digital literacy.
               </p>
 
-              <p className="text-base leading-relaxed font-family-sans-serif text-[#4A4D54]">
+              <p className="text-[16px] lg:text-[20px] leading-[150%] text-[#58595B]">
                 Our aim is to ensure that the whole nation is digitally literate
                 and has access to the opportunities the digital space provides.
               </p>
             </motion.div>
           </motion.div>
 
-          <motion.div className="relative" variants={imageVariants}>
-            <div className="relative">
-              <div className="absolute -top-8 -right-8 w-32 h-32 bg-[#1077ED]/10 rounded-full blur-2xl"></div>
-              {/* <div className="absolute -bottom-8 -left-8 w-24 h-24 bg-[#1077ED]/20 rounded-full blur-xl"></div> */}
-
-              <div className="relative bg-white p-8 rounded-2xl shadow-xl border border-gray-200">
-                <img
-                  src="/image/ab1.png"
-                  alt="Global Wissen team working on digital literacy projects"
-                  className="w-full h-auto rounded-lg object-cover"
-                />
-              </div>
+          <motion.div variants={imageVariants}>
+            <div className="">
+              <img
+                src="about-us-section.png"
+                alt="Global Wissen team working on digital literacy projects"
+                className="w-full h-auto"
+              />
             </div>
           </motion.div>
         </motion.div>

@@ -1,11 +1,12 @@
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
 import AboutUs from "./components/AboutUs";
+// import Partners from "./components/Partner";
+import Stats from "./components/Stats";
+// import Services from "./components/Services";
+import Community from "./components/Community";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-import Hero from "./components/Hero";
-import Navbar from "./components/Navbar";
-import Partners from "./components/Partner";
-import Services from "./components/Services";
-import Stats from "./components/Stats";
 
 function App() {
   return (
@@ -13,9 +14,10 @@ function App() {
       <Navbar />
       <Hero />
       <AboutUs />
-      <Partners />
       <Stats />
-      <Services />
+      {/*  <Partners />
+      <Services />*/}
+      <Community />
       <Contact />
       <Footer />
     </>

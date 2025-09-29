@@ -1,9 +1,8 @@
 import { Link } from "react-scroll";
 import { motion } from "framer-motion";
-import logo from "../../public/image/logo.png";
+// import logo from "../../public/image/logo.png";
 
 import { FaPhone } from "react-icons/fa";
-import { MdOutlineEmail } from "react-icons/md";
 import { TbWorld } from "react-icons/tb";
 import { HiOutlineMail } from "react-icons/hi";
 
@@ -79,7 +78,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-white">
+    <footer className="bg-[#003058]">
       <motion.div
         className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16"
         initial="hidden"
@@ -102,13 +101,11 @@ const Footer = () => {
                 whileHover={{ scale: 1.05 }}
                 transition={{ duration: 0.2 }}
               >
-                <img
-                  src={logo}
-                  alt="Global Wissen Logo"
-                  className="w-20 h-20"
-                />
+                <h1 className="text-white font-bold lg:text-[20px] leading-[100%]">
+                  Global Wissen Limited
+                </h1>
                 <motion.p
-                  className="text-sm font-family-sans-serif text-[#4A4D54] mt-4 leading-relaxed max-w-xs"
+                  className="text-[16px] text-[#BEBFC0] font-medium leading-[28px] mt-4 max-w-sm"
                   variants={itemVariants}
                 >
                   Empowering professionals with cutting-edge technology
@@ -120,7 +117,7 @@ const Footer = () => {
 
           <motion.div className="lg:col-span-1" variants={itemVariants}>
             <motion.h3
-              className="text-sm leading-relaxed mb-6 font-medium font-family-sans-serif text-[#4A4D54]"
+              className="text-[16px] leading-[28px] font-bold text-white mb-6"
               variants={itemVariants}
             >
               Quick Info
@@ -140,7 +137,7 @@ const Footer = () => {
                   }}
                 >
                   <Link
-                    className="text-sm leading-relaxed font-normal font-family-sans-serif text-[#4A4D54] cursor-pointer hover:text-[#1077ED] transition-colors duration-200"
+                    className="text-[16px] font-medium text-[#BEBFC0] leading-[28px]"
                     to={link.href}
                     smooth={true}
                     duration={500}
@@ -155,7 +152,7 @@ const Footer = () => {
           {/* Programs Section */}
           <motion.div className="lg:col-span-1" variants={itemVariants}>
             <motion.h3
-              className="text-sm leading-relaxed mb-6 font-medium font-family-sans-serif text-[#4A4D54]"
+              className="text-[16px] leading-[28px] font-bold text-white mb-6"
               variants={itemVariants}
             >
               Programs
@@ -175,7 +172,7 @@ const Footer = () => {
                   }}
                 >
                   <Link
-                    className="text-sm leading-relaxed font-normal font-family-sans-serif text-[#4A4D54] cursor-pointer hover:text-[#1077ED] transition-colors duration-200"
+                    className="text-[16px] font-medium text-[#BEBFC0] leading-[28px]"
                     to={program.href}
                     smooth={true}
                     duration={500}
@@ -190,7 +187,7 @@ const Footer = () => {
           {/* Contact Us Section */}
           <motion.div className="lg:col-span-1" variants={itemVariants}>
             <motion.h3
-              className="text-sm leading-relaxed mb-6 font-medium font-family-sans-serif text-[#4A4D54]"
+              className="text-[16px] leading-[28px] font-bold text-white mb-6"
               variants={itemVariants}
             >
               Contact Us
@@ -211,7 +208,7 @@ const Footer = () => {
                 >
                   <a
                     href={contact.href}
-                    className="text-sm flex items-center gap-[10px] leading-relaxed font-normal font-family-sans-serif text-[#4A4D54] cursor-pointer hover:text-[#1077ED] transition-colors duration-200"
+                    className="text-sm flex items-center gap-[10px] cursor-pointer text-[16px] font-medium text-[#BEBFC0] leading-[28px]"
                   >
                     {contact.logo}
                     {contact.name}
@@ -220,10 +217,10 @@ const Footer = () => {
               ))}
 
               <motion.div
-                className="mt-6 pt-4 border-t border-[#E4E4E4]"
+                className="mt-6 pt-4 border-t border-[#BEBFC0]"
                 variants={itemVariants}
               >
-                <p className="text-xs font-family-sans-serif text-[#4A4D54] leading-relaxed">
+                <p className="text-[16px] font-medium text-[#BEBFC0] leading-[28px]">
                   <strong>Office Hours:</strong>
                   <br />
                   Mon - Fri: 9:00 AM - 6:00 PM
@@ -237,14 +234,14 @@ const Footer = () => {
 
         {/* Footer Bottom Section */}
         <motion.div
-          className="border-t border-[#E4E4E4] pt-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6"
+          className="border-t border-[#BEBFC0] pt-8 flex flex-col-reverse text-center lg:flex-row justify-between gap-6"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.6 }}
           viewport={{ once: true }}
         >
           <motion.p
-            className="text-base font-normal font-family-sans-serif text-[#4A4D54]"
+            className="text-[12px] lg:text-[16px] font-medium text-[#BEBFC0] leading-[28px]"
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.4, delay: 0.7 }}
@@ -265,10 +262,9 @@ const Footer = () => {
                 <motion.a
                   key={index}
                   href="#"
-                  className="text-[#4A4D54] text-base font-family-sans-serif font-normal hover:text-[#1077ED] transition-colors duration-200"
+                  className="text-[12px] lg:text-[16px] flex items-center justify-center font-medium text-[#BEBFC0] leading-[28px]"
                   whileHover={{
                     y: -2,
-                    color: "#1077ED",
                   }}
                   transition={{ duration: 0.2 }}
                 >
