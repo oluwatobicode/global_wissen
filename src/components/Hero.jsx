@@ -17,7 +17,7 @@ const Hero = () => {
         <div className="flex items-center justify-center md:flex-row flex-col md:gap-[24px] gap-[12px]">
           <img
             className="lg:w-[250px] lg:h-[280px] w-[345px] h-[160px] rounded-[12px]"
-            src="/hero-section-one.jpg"
+            src="/hero-section-one.png"
             alt="Hero-section-one"
           />
 

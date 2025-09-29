@@ -19,11 +19,7 @@ const Navbar = () => {
     <nav className="fixed top-0 z-50 w-full p-6 md:h-[95px] bg-white">
       <div className="mx-auto max-w-6xl flex items-center">
         <div className="mr-auto">
-          <img
-            src="/image/logo.png"
-            alt="Global Wissen Logo"
-            className="w-20"
-          />
+          <img src="logo.png" alt="Global Wissen Logo" className="w-20" />
         </div>
 
         {/* Desktop Menu */}

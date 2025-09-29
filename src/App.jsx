@@ -1,23 +1,25 @@
-// import AboutUs from "./components/AboutUs";
-// import Contact from "./components/Contact";
-// import Footer from "./components/Footer";
-import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import AboutUs from "./components/AboutUs";
 // import Partners from "./components/Partner";
+import Stats from "./components/Stats";
 // import Services from "./components/Services";
-// import Stats from "./components/Stats";
+import Community from "./components/Community";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 function App() {
   return (
     <>
       <Navbar />
       <Hero />
-      {/* <AboutUs />
-      <Partners />
+      <AboutUs />
       <Stats />
-      <Services />
+      {/*  <Partners />
+      <Services />*/}
+      <Community />
       <Contact />
-      <Footer /> */}
+      <Footer />
     </>
   );
 }
