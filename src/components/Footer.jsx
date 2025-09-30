@@ -102,7 +102,7 @@ const Footer = () => {
                 transition={{ duration: 0.2 }}
               >
                 <h1 className="text-white font-family-montserrat font-bold lg:text-[20px] leading-[100%]">
-                  Global Wissen Limited
+                  Global Wissen Consult
                 </h1>
                 <motion.p
                   className="text-[16px] font-family-manrope text-[#BEBFC0] font-medium leading-[28px] mt-4 max-w-sm"
