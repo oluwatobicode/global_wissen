@@ -95,37 +95,6 @@ const Community = () => {
                 </motion.div>
               ))}
             </div>
-
-            <motion.div
-              className="flex flex-col lg:flex-row justify-center gap-4"
-              initial={{ opacity: 0, scale: 0.8 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 1.2 }}
-            >
-              <motion.button
-                className="px-6 py-2 border-2 font-family-montserrat cursor-pointer border-white text-white rounded-xl font-normal text-[15.24px] font-family-sans-serif"
-                whileHover={{
-                  scale: 1.05,
-                  backgroundColor: "rgba(255,255,255,0.1)",
-                }}
-                whileTap={{ scale: 0.95 }}
-                transition={{ type: "spring", stiffness: 300 }}
-              >
-                Start Your Journey
-              </motion.button>
-              <motion.button
-                className="px-6 py-2 border-2 font-family-montserrat cursor-pointer border-white text-white rounded-xl font-normal text-[15.24px] font-family-sans-serif"
-                whileHover={{
-                  scale: 1.05,
-                  backgroundColor: "rgba(255,255,255,0.1)",
-                }}
-                whileTap={{ scale: 0.95 }}
-                transition={{ type: "spring", stiffness: 300 }}
-              >
-                View All Stories
-              </motion.button>
-            </motion.div>
           </div>
         </motion.div>
       </div>
