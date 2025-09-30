@@ -67,7 +67,7 @@ Our next community highlight will be the student certification ceremonies hosted
 
   return (
     <main className="min-h-screen py-16 lg:py-24" id="services">
-      <div className="max-w-6xl mx-auto px-10 lg:px-8">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <motion.div
           className="text-center mb-16"
           initial="hidden"

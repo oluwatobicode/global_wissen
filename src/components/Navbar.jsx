@@ -74,7 +74,7 @@ const Navbar = () => {
       {/* Mobile Menu */}
       {isMenuOpen && (
         <div className="md:hidden mt-4 bg-white border-t border-gray-100">
-          <div className="flex flex-col space-y-4 p-4">
+          <div className="flex flex-col items-center justify-center space-y-4 p-4">
             {navLinks.map((link, index) => (
               <Link
                 key={index}
