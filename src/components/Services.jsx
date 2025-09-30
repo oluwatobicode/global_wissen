@@ -76,14 +76,14 @@ Our next community highlight will be the student certification ceremonies hosted
           variants={containerVariants}
         >
           <motion.h2
-            className="text-[20px] lg:text-[28px] font-bold text-[#003058] mb-3 leading-[150%] lg:leading-[125%]"
+            className="text-[20px] font-family-montserrat lg:text-[28px] font-bold text-[#003058] mb-3 leading-[150%] lg:leading-[125%]"
             variants={itemVariants}
           >
             Our KCR Framework
           </motion.h2>
 
           <motion.p
-            className="text-[16px] lg:text-[20px] font-medium leading-[150%] text-[#58595B] max-w-3xl mx-auto"
+            className="text-[16px] font-family-manrope lg:text-[20px] font-medium leading-[150%] text-[#58595B] max-w-3xl mx-auto"
             variants={itemVariants}
           >
             Every project we develop, implement and facilitate is built on our
@@ -120,14 +120,14 @@ Our next community highlight will be the student certification ceremonies hosted
                 }`}
               >
                 <h4
-                  className={`text-[16px] lg:text-[20px] font-bold leading-[100%] mb-4 transition-colors duration-300 ${
+                  className={`text-[16px] font-family-montserrat lg:text-[20px] font-bold leading-[100%] mb-4 transition-colors duration-300 ${
                     isExpanded(index) ? "text-white" : "text-[#003058]"
                   }`}
                 >
                   {feature.title}
                 </h4>
                 <p
-                  className={`text-[14px] lg:text-[16px] leading-[150%] lg:leading-[28px] font-medium transition-colors duration-300 ${
+                  className={`text-[14px] lg:text-[16px] font-family-manrope leading-[150%] lg:leading-[28px] font-medium transition-colors duration-300 ${
                     isExpanded(index) ? "text-[#BEBFC0]" : "text-[#58595B]"
                   }`}
                 >

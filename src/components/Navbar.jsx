@@ -5,10 +5,10 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navLinks = [
-    { name: "About", href: "about" },
-    { name: "Who We Are", href: "community" },
-    { name: "Services", href: "services" },
-    { name: "Contact", href: "contact" },
+    { name: "Home", href: "home" },
+    { name: "About Us", href: "community" },
+    { name: "Our Services", href: "services" },
+    { name: "Contact Us", href: "contact" },
   ];
 
   const toggleMenu = () => {
@@ -30,7 +30,7 @@ const Navbar = () => {
                 key={index}
                 smooth={true}
                 duration={500}
-                className="cursor-pointer text-[16px] font-medium text-[#222222] hover:text-black transition-colors duration-200"
+                className="cursor-pointer font-family-montserrat text-[16px] font-medium text-[#222222] hover:text-black transition-colors duration-200"
                 to={link.href}
               >
                 {link.name}

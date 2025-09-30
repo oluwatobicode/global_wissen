@@ -161,7 +161,7 @@ const Contact = () => {
               initial={{ opacity: 0, y: -20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="text-[20px] lg:text-[28px] text-center font-medium leading-[125%] text-[#003058] mb-4 lg:mb-6"
+              className="text-[20px] font-family-montserrat lg:text-[28px] text-center font-medium leading-[125%] text-[#003058] mb-4 lg:mb-6"
             >
               Let's Build the Future Together
             </motion.h1>
@@ -170,7 +170,7 @@ const Contact = () => {
               initial={{ opacity: 0, y: -10 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
-              className="text-[16px] lg:text-[20px] text-center font-medium leading-[150%]  text-[#58595B] mb-6 lg:mb-10"
+              className="text-[16px] font-family-manrope lg:text-[20px] text-center font-medium leading-[150%]  text-[#58595B] mb-6 lg:mb-10"
             >
               Got questions, ideas, or partnerships? We'd love to hear from you.
               Let's connect and explore how we can support your journey or work
@@ -190,7 +190,7 @@ const Contact = () => {
                   className="flex flex-col sm:flex-row gap-4"
                 >
                   <div className="flex-1">
-                    <label className="block text-sm font-medium font-family-sans-serif text-[#6E7176] mb-2">
+                    <label className="block font-family-montserrat text-sm font-medium font-family-sans-serif text-[#6E7176] mb-2">
                       Full Name
                     </label>
                     <motion.input
@@ -210,7 +210,7 @@ const Contact = () => {
                     />
                   </div>
                   <div className="flex-1">
-                    <label className="block text-sm font-medium font-family-sans-serif text-[#6E7176] mb-2">
+                    <label className="block font-family-montserrat text-sm font-medium font-family-sans-serif text-[#6E7176] mb-2">
                       Email Address
                     </label>
                     <motion.input
@@ -232,7 +232,7 @@ const Contact = () => {
                 </motion.div>
 
                 <motion.div variants={itemVariants}>
-                  <label className="block text-sm font-medium font-family-sans-serif text-[#6E7176] mb-2">
+                  <label className="block text-sm font-family-montserrat font-medium font-family-sans-serif text-[#6E7176] mb-2">
                     Subject
                   </label>
                   <motion.input
@@ -253,7 +253,7 @@ const Contact = () => {
                 </motion.div>
 
                 <motion.div variants={itemVariants}>
-                  <label className="block text-sm font-medium font-family-sans-serif text-[#6E7176] mb-2">
+                  <label className="block text-sm font-family-montserrat font-medium font-family-sans-serif text-[#6E7176] mb-2">
                     Message
                   </label>
                   <motion.textarea
@@ -296,7 +296,7 @@ const Contact = () => {
                   transition={{ type: "spring", stiffness: 300 }}
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full h-[52px] bg-[#003058] text-white font-medium rounded-xl cursor-pointer disabled:opacity-70 disabled:cursor-not-allowed"
+                  className="w-full h-[52px] font-family-montserrat bg-[#003058] text-white font-medium rounded-xl cursor-pointer disabled:opacity-70 disabled:cursor-not-allowed"
                 >
                   {isSubmitting ? "Sending..." : "Send Message"}
                 </motion.button>

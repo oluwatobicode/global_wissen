@@ -101,11 +101,11 @@ const Footer = () => {
                 whileHover={{ scale: 1.05 }}
                 transition={{ duration: 0.2 }}
               >
-                <h1 className="text-white font-bold lg:text-[20px] leading-[100%]">
+                <h1 className="text-white font-family-montserrat font-bold lg:text-[20px] leading-[100%]">
                   Global Wissen Limited
                 </h1>
                 <motion.p
-                  className="text-[16px] text-[#BEBFC0] font-medium leading-[28px] mt-4 max-w-sm"
+                  className="text-[16px] font-family-manrope text-[#BEBFC0] font-medium leading-[28px] mt-4 max-w-sm"
                   variants={itemVariants}
                 >
                   Empowering professionals with cutting-edge technology
@@ -117,10 +117,10 @@ const Footer = () => {
 
           <motion.div className="lg:col-span-1" variants={itemVariants}>
             <motion.h3
-              className="text-[16px] leading-[28px] font-bold text-white mb-6"
+              className="text-[16px] font-family-montserrat leading-[28px] font-bold text-white mb-6"
               variants={itemVariants}
             >
-              Quick Info
+              Our Info
             </motion.h3>
             <motion.div
               className="flex flex-col space-y-4"
@@ -137,7 +137,7 @@ const Footer = () => {
                   }}
                 >
                   <Link
-                    className="text-[16px] font-medium text-[#BEBFC0] leading-[28px]"
+                    className="text-[16px] font-family-manrope font-medium text-[#BEBFC0] leading-[28px]"
                     to={link.href}
                     smooth={true}
                     duration={500}
@@ -152,10 +152,10 @@ const Footer = () => {
           {/* Programs Section */}
           <motion.div className="lg:col-span-1" variants={itemVariants}>
             <motion.h3
-              className="text-[16px] leading-[28px] font-bold text-white mb-6"
+              className="text-[16px] font-family-montserrat leading-[28px] font-bold text-white mb-6"
               variants={itemVariants}
             >
-              Programs
+              Our courses
             </motion.h3>
             <motion.div
               className="flex flex-col space-y-4"
@@ -172,7 +172,7 @@ const Footer = () => {
                   }}
                 >
                   <Link
-                    className="text-[16px] font-medium text-[#BEBFC0] leading-[28px]"
+                    className="text-[16px] font-family-manrope font-medium text-[#BEBFC0] leading-[28px]"
                     to={program.href}
                     smooth={true}
                     duration={500}
@@ -187,7 +187,7 @@ const Footer = () => {
           {/* Contact Us Section */}
           <motion.div className="lg:col-span-1" variants={itemVariants}>
             <motion.h3
-              className="text-[16px] leading-[28px] font-bold text-white mb-6"
+              className="text-[16px] font-family-montserrat leading-[28px] font-bold text-white mb-6"
               variants={itemVariants}
             >
               Contact Us
@@ -208,7 +208,7 @@ const Footer = () => {
                 >
                   <a
                     href={contact.href}
-                    className="text-sm flex items-center gap-[10px] cursor-pointer text-[16px] font-medium text-[#BEBFC0] leading-[28px]"
+                    className="text-sm font-family-manrope flex items-center gap-[10px] cursor-pointer text-[16px] font-medium text-[#BEBFC0] leading-[28px]"
                   >
                     {contact.logo}
                     {contact.name}
@@ -220,7 +220,7 @@ const Footer = () => {
                 className="mt-6 pt-4 border-t border-[#BEBFC0]"
                 variants={itemVariants}
               >
-                <p className="text-[16px] font-medium text-[#BEBFC0] leading-[28px]">
+                <p className="text-[16px] font-family-manrope font-medium text-[#BEBFC0] leading-[28px]">
                   <strong>Office Hours:</strong>
                   <br />
                   Mon - Fri: 9:00 AM - 6:00 PM
@@ -241,7 +241,7 @@ const Footer = () => {
           viewport={{ once: true }}
         >
           <motion.p
-            className="text-[12px] lg:text-[16px] font-medium text-[#BEBFC0] leading-[28px]"
+            className="text-[12px] font-family-manrope lg:text-[16px] font-medium text-[#BEBFC0] leading-[28px]"
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.4, delay: 0.7 }}
@@ -262,7 +262,7 @@ const Footer = () => {
                 <motion.a
                   key={index}
                   href="#"
-                  className="text-[12px] lg:text-[16px] flex items-center justify-center font-medium text-[#BEBFC0] leading-[28px]"
+                  className="text-[12px] font-family-manrope lg:text-[16px] flex items-center justify-center font-medium text-[#BEBFC0] leading-[28px]"
                   whileHover={{
                     y: -2,
                   }}

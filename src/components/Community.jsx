@@ -32,7 +32,7 @@ const Community = () => {
         >
           <div className="max-w-4xl mx-auto">
             <motion.h2
-              className="text-[20px] font-medium text-[#FFFFFF] lg:text-[28px] mb-6"
+              className="text-[20px] font-family-montserrat font-medium text-[#FFFFFF] lg:text-[28px] mb-6"
               initial={{ opacity: 0, y: -20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -47,7 +47,7 @@ const Community = () => {
             </motion.h2>
 
             <motion.p
-              className="text-[#BEBFC0] font-medium leading-[150%] text-[16px] lg:text-[20px]"
+              className="text-[#BEBFC0] font-family-manrope font-medium leading-[150%] text-[16px] lg:text-[20px]"
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
@@ -73,7 +73,7 @@ const Community = () => {
                   }}
                 >
                   <motion.div
-                    className="w-16 h-16 bg-white text-[#000] text-[22px] rounded-2xl flex items-center justify-center font-normal font-family-sans-serif mb-4 mx-auto"
+                    className="w-16 h-16 font-family-montserrat bg-white text-[#000] text-[22px] rounded-2xl flex items-center justify-center font-normal font-family-sans-serif mb-4 mx-auto"
                     initial={{ scale: 0, rotate: 180 }}
                     whileInView={{ scale: 1, rotate: 0 }}
                     viewport={{ once: true }}
@@ -86,10 +86,10 @@ const Community = () => {
                   >
                     {step.id}
                   </motion.div>
-                  <h3 className="text-[14px] font-regular text-[#FFFFFF] leading-[120%] font-semibold mb-3">
+                  <h3 className="text-[14px] font-family-montserrat font-regular text-[#FFFFFF] leading-[120%] font-semibold mb-3">
                     {step.title}
                   </h3>
-                  <p className="text-[14px] italic font-regular text-[#BEBFC0] leading-[150%] tracking-[-4%] ">
+                  <p className="text-[14px] font-family-montserrat italic font-regular text-[#BEBFC0] leading-[150%] tracking-[-4%] ">
                     {step.desc}
                   </p>
                 </motion.div>
@@ -104,7 +104,7 @@ const Community = () => {
               transition={{ duration: 0.5, delay: 1.2 }}
             >
               <motion.button
-                className="px-6 py-2 border-2 cursor-pointer border-white text-white rounded-xl font-normal text-[15.24px] font-family-sans-serif"
+                className="px-6 py-2 border-2 font-family-montserrat cursor-pointer border-white text-white rounded-xl font-normal text-[15.24px] font-family-sans-serif"
                 whileHover={{
                   scale: 1.05,
                   backgroundColor: "rgba(255,255,255,0.1)",
@@ -115,7 +115,7 @@ const Community = () => {
                 Start Your Journey
               </motion.button>
               <motion.button
-                className="px-6 py-2 border-2 cursor-pointer border-white text-white rounded-xl font-normal text-[15.24px] font-family-sans-serif"
+                className="px-6 py-2 border-2 font-family-montserrat cursor-pointer border-white text-white rounded-xl font-normal text-[15.24px] font-family-sans-serif"
                 whileHover={{
                   scale: 1.05,
                   backgroundColor: "rgba(255,255,255,0.1)",
