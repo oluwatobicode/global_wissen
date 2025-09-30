@@ -1,5 +1,6 @@
 @import "tailwindcss";
 
-body {
-  font-family: "Montserrat", sans-serif;
+@theme {
+  --font-family-montserrat: "Montserrat", sans-serif;
+  --font-family-manrope: "Manrope", sans-serif;
 }

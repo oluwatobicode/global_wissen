@@ -42,12 +42,12 @@ const AboutUs = () => {
         >
           <motion.div className="space-y-8" variants={itemVariants}>
             <div className="space-y-4">
-              <h1 className="text-[20px] lg:text-[24px] font-medium leading-[150%]">
+              <h1 className="text-[20px] lg:text-[24px] font-medium leading-[150%] font-family-montserrat">
                 About Us
               </h1>
 
               <motion.h1
-                className="text-[24px] lg:text-[32px] font-bold text-[#003058] leading-[125%]"
+                className="text-[24px] lg:text-[32px] font-bold text-[#003058] leading-[125%] font-family-montserrat"
                 variants={itemVariants}
               >
                 Global Wissen Consult
@@ -55,7 +55,7 @@ const AboutUs = () => {
             </div>
 
             <motion.div className="space-y-6 flex-1" variants={itemVariants}>
-              <p className="text-[16px] lg:text-[20px] leading-[150%] text-[#58595B]">
+              <p className="text-[16px] lg:text-[20px] leading-[150%] text-[#58595B] font-family-manrope">
                 Global Wissen Consult is a{" "}
                 <span className="font-semibold text-[#003058]">
                   Swedish/Nigerian Social development enterprise
@@ -64,7 +64,7 @@ const AboutUs = () => {
                 ways of learning.
               </p>
 
-              <p className="text-[16px] lg:text-[20px] leading-[150%] text-[#58595B]">
+              <p className="text-[16px] lg:text-[20px] leading-[150%] text-[#58595B] font-family-manrope">
                 The organization develops, implements & facilitates various
                 projects for universities, women & creatives. All projects are
                 under the core framework{" "}
@@ -73,7 +73,7 @@ const AboutUs = () => {
                 spread digital literacy.
               </p>
 
-              <p className="text-[16px] lg:text-[20px] leading-[150%] text-[#58595B]">
+              <p className="text-[16px] lg:text-[20px] leading-[150%] text-[#58595B] font-family-manrope">
                 Our aim is to ensure that the whole nation is digitally literate
                 and has access to the opportunities the digital space provides.
               </p>

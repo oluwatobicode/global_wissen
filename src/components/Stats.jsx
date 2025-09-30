@@ -31,7 +31,7 @@ const Stats = () => {
         <div className="flex flex-col items-center justify-center text-center mb-8 sm:mb-16">
           <div className="max-w-3xl">
             <motion.h1
-              className="text-[20px] sm:text-4xl lg:text-[28px] font-bold leading-tight text-[#003058] mb-4 sm:mb-6"
+              className="text-[20px] font-family-montserrat sm:text-4xl lg:text-[28px] font-bold leading-tight text-[#003058] mb-4 sm:mb-6"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, ease: "easeOut" }}
@@ -40,7 +40,7 @@ const Stats = () => {
             </motion.h1>
 
             <motion.p
-              className="text-[16px] sm:text-lg lg:text-[20px] leading-[150%] text-[#58595B] font-medium px-4 sm:px-0"
+              className="text-[16px] font-font-family-montserrat sm:text-lg lg:text-[20px] leading-[150%] text-[#58595B] font-medium px-4 sm:px-0"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
@@ -74,7 +74,7 @@ const Stats = () => {
               }}
             >
               <motion.h1
-                className="text-[20px] sm:text-3xl lg:text-[32px] text-[#003058] font-bold mb-2"
+                className="text-[20px] font-family-montserrat sm:text-3xl lg:text-[32px] text-[#003058] font-bold mb-2"
                 initial={{ scale: 0 }}
                 whileInView={{ scale: 1 }}
                 viewport={{ once: true }}
@@ -89,7 +89,7 @@ const Stats = () => {
               </motion.h1>
 
               <motion.p
-                className="text-[14px] text-[#222222] font-semibold leading-[150%]"
+                className="text-[14px] font-family-montserrat text-[#222222] font-semibold leading-[150%]"
                 initial={{ opacity: 0, y: 10 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -99,7 +99,7 @@ const Stats = () => {
               </motion.p>
 
               <motion.p
-                className="text-[12px] text-[#58595B] font-normal leading-[150%] italic"
+                className="text-[12px] font-family-montserrat text-[#58595B] font-normal leading-[150%] italic"
                 initial={{ opacity: 0, y: 10 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
